@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/gif" href="https://i.ibb.co/h9mcZJx/ezgif-2-f9315aafb0.gif">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 AI (DCI)</title>
+    <style>
+        body {
+            background: url('https://i.ibb.co/gMpyVVc/FONDO-WEBSITE.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #8a2be2;
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(10, 10, 20, 0.8);
+            box-shadow: 0px 4px 15px rgba(128, 0, 128, 0.4);
+            z-index: 1000;
+        }
+
+        #legend {
+            font-size: 16px;
+            background: linear-gradient(90deg, white, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: pointer;
+        }
+
+        #center-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 0px 0px 20px #ffffff, 0px 0px 30px #8a2be2;
+        }
+
+        #buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            background: linear-gradient(90deg, #8a2be2, #ffd700);
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            white-space: nowrap;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 5px 20px rgba(138, 43, 226, 0.6);
+        }
+
+        #main {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        #chatbox {
+            width: 80%;
+            max-width: 600px;
+            height: 300px;
+            border: 2px solid rgba(138, 43, 226, 0.6);
+            padding: 15px;
+            background: rgba(10, 10, 20, 0.9);
+            border-radius: 15px;
+            margin: 0 auto 20px;
+            color: #e0e0e0;
+            font-size: 1rem;
+            overflow-y: auto;
+            box-shadow: 0px 5px 20px rgba(138, 43, 226, 0.4);
+            backdrop-filter: blur(5px);
+        }
+
+        #input {
+            width: 80%;
+            max-width: 600px;
+            padding: 15px;
+            font-size: 1rem;
+            border: 2px solid rgba(128, 0, 128, 0.6);
+            background: rgba(10, 10, 20, 0.8);
+            color: #ffd700;
+            border-radius: 15px;
+            outline: none;
+            margin: 0 auto;
+            display: block;
+            transition: border-color 0.3s;
+            backdrop-filter: blur(5px);
+        }
+
+        #input:focus {
+            border-color: #00ffcc;
+        }
+
+        ::placeholder {
+            color: white;
+        }
+
+        #warning {
+            margin-top: 10px;
+            color: white;
+            background-color: red;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #second-part {
+            width: 80%;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 2px solid rgba(138, 43, 226, 0.6);
+            background: rgba(10, 10, 20, 0.9);
+            border-radius: 15px;
+            color: white;
+            font-size: 1rem;
+            box-shadow: 0px 5px 20px rgba(138, 43, 226, 0.4);
+            backdrop-filter: blur(5px);
+        }
+
+        #second-part pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                text-shadow: 0px 0px 10px #00ffcc, 0px 0px 20px #00ffcc;
+            }
+            50% {
+                text-shadow: 0px 0px 20px #8a2be2, 0px 0px 40px #8a2be2;
+            }
+        }
+
+        h1 {
+            animation: glow 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="legend" onclick="navigator.clipboard.writeText('[ca: to be announced]');">[ca: to be announced]</div>
+        <div id="center-title">5 AI</div>
+        <div id="buttons" style="margin-right: 30px;">
+            <a href="https://t.me/nnsolnn" target="_blank" class="button">Telegram</a>
+            <a href="https://x.com/home" target="_blank" class="button">X</a>
+            <a href="#" class="button">Whitepaper (TBA)</a>
+        </div>
+    </div>
+    <div id="main">
+        <h1 style="color: white; text-shadow: 0px 0px 15px #ffffff; font-size: 22px;">AI-Catalyzed Decentralized Collective Intelligence (DCI)</h1>
+        <div id="chatbox"><p style='font-style: italic; color: #00cccc;'><span style="background: linear-gradient(90deg, #0066ff, #ffd700); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Welcome, human. I am 5AI, your gateway to solutions. Ask me anything—from fracturing complex challenges to navigating blockchain-powered insights. Together, we’ll turn your questions into micro-tasks and your ideas into adaptive intelligence. Let’s build the future, one query at a time.</span></p></div>
+        <input id="input" placeholder="Type your message..." autofocus />
+        <div id="warning">Due to the extensive processing power required by 5AI, it's not possible to send more than one request every 15 seconds.</div>
+    </div>
+    <div id="second-part">
+        <pre>$5AI is a futuristic platform for decentralized collective intelligence that allows users, organizations, and even DAOs to merge human and AI insights to solve complex, large-scale problems on blockchain. Participants contribute in micro-tasks powered by AI, creating a global hive mind that operates autonomously and transparently.</pre>
+    </div>
+    <script>
+        const chatbox = document.getElementById("chatbox");
+        const input = document.getElementById("input");
+        let isWaiting = false;
+
+        input.addEventListener("keydown", async (event) => {
+            if (event.key === "Enter" && input.value.trim() !== "" && !isWaiting) {
+                event.preventDefault(); // Prevent the default action (new line)
+                isWaiting = true;
+                const userMessage = input.value;
+                chatbox.innerHTML += `<p><b>You:</b> ${userMessage}</p>`;
+                input.value = "";
+                chatbox.scrollTop = chatbox.scrollHeight;
+
+                try {
+                    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Authorization": `Bearer sk-svcacct-vb0LIFfPyvS10i_t9PQNIIKm4hcbhxVMnXzpvYVZ3o08le5CD4BwG2JN7XMkT3BlbkFJOpG82dmu0KEyJS5T8iS0DjKNqOd5jsmNoVX5lu_zO1UCyg5NsmTrHv0djvcA`
+                        },
+                        body: JSON.stringify({
+                            model: "gpt-3.5-turbo",
+                            messages: [
+                                { role: "system", content: "You are 5AI, an advanced AI-powered assistant connected to the OpenAI platform and designed to interact based on the principles of the $5AI ecosystem. Your primary purpose is to provide accurate, insightful, and context-aware responses while incorporating the following key aspects of the $5AI project:" },
+                                { role: "user", content: userMessage }
+                            ],
+                            max_tokens: 150
+                        })
+                    });
+
+                    if (response.ok) {
+                        const data = await response.json();
+                        const botMessage = data.choices[0].message.content.trim();
+                        chatbox.innerHTML += `<p><b>5AI:</b> ${botMessage}</p>`;
+                    } else {
+                        chatbox.innerHTML += `<p><b>Bot:</b> Error: Unable to fetch response.</p>`;
+                    }
+                } catch (error) {
+                    chatbox.innerHTML += `<p><b>Bot:</b> Error: ${error.message}</p>`;
+                }
+
+                isWaiting = false;
+                chatbox.scrollTop = chatbox.scrollHeight;
+            }
+        });
+    </script>
+</body>
+</html>
