@@ -160,7 +160,7 @@
         }
 
         .silver-text {
-            color: silver;
+            color: silver !important; /* Se asegura de que el color plateado se aplique */
         }
     </style>
 </head>
@@ -176,7 +176,13 @@
     </div>
     <div id="main">
         <h1 style="color: white; text-shadow: 0px 0px 15px #ffffff; font-size: 22px;">AI-Catalyzed Decentralized Collective Intelligence (DCI)</h1>
-        <div id="chatbox"><p class="silver-text" style='font-style: italic;'><span style="background: linear-gradient(90deg, #0066ff, #ffd700); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Welcome, human. I am 5AI, your gateway to solutions. Ask me anything—from fracturing complex challenges to navigating blockchain-powered insights. Together, we’ll turn your questions into micro-tasks and your ideas into adaptive intelligence. Let’s build the future, one query at a time.</span></p></div>
+        <div id="chatbox">
+            <p class="silver-text" style="font-style: italic;">
+                <span style="background: linear-gradient(90deg, #0066ff, #ffd700); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Welcome, human. I am 5AI, your gateway to solutions. Ask me anything—from fracturing complex challenges to navigating blockchain-powered insights. Together, we’ll turn your questions into micro-tasks and your ideas into adaptive intelligence. Let’s build the future, one query at a time.
+                </span>
+            </p>
+        </div>
         <input id="input" placeholder="Type your message..." autofocus />
         <div id="warning">Due to the extensive processing power required by 5AI, it's not possible to send more than one request every 15 seconds.</div>
     </div>
